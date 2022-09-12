@@ -58,7 +58,7 @@ const NavBtn = styled.div`
   button {
     background-color: #4c7fb5;
     border: 2px solid #4c7fb5;
-    border-radius: 20px;
+    border-radius: 8px;
     height: 40px;
     width: 100px;
     color: #fff;
@@ -124,7 +124,7 @@ const Navbar = ({ toggle }) => {
           );
         })}
       </NavMenu>
-      <NavBtn>
+      <NavBtn className="btn">
         <button>Give</button>
       </NavBtn>
     </nav>
