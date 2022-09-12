@@ -1,0 +1,9 @@
+.worship {
+  background-image: url(../../img/PNG/aboutus1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-height: 1100px;
+  width: 100%;
+}
