@@ -8,7 +8,7 @@ const About1 = () => {
         <h3 className="text-uppercase">
           Anyone who joins us in fellowship will be positively impacted.{" "}
         </h3>
-        <p style={{ color: "#70768A" }}>
+        <p style={{ color: "#70768A", textAlign: "justify" }}>
           As a faith community in Queens, our members are engaged in a wide
           variety of activities, both within the church and serving the wider
           community. There are many opportunities for our members to get

@@ -9,9 +9,9 @@ import img4 from "../../img/PNG/Rectangle4205.png";
 const About = () => {
   return (
     <div>
-      <Container style={{ color: "#fff" }}>
+      <Container style={{ color: "#fff", textAlign: "justify" }}>
         <h1>About Us</h1>
-        <p>
+        <p style={{ color: "#fff", textAlign: "justify" }}>
           Dominion City Church of New York is a non-denominational church
           located in the heart of the Fresh Meadows area of Queens, New York.
           Here at Dominion City New York, we do so much more than just perform

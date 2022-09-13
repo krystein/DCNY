@@ -26,7 +26,7 @@ const Pastoral = () => {
             <img src="" alt="" />
             <h1>worship ministry</h1>
           </div>
-          <p>
+          <p style={{ textAlign: "justify" }}>
             Learn-IT academy(Software Engineering Institute) is an elite
             software engineering and leadership training school that equips high
             potential individuals with world-class software engineering skills
