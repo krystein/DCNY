@@ -23,9 +23,9 @@ function App() {
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Routes>
         <Route exact path="/" element={<Index />}></Route>
-        <Route path="/Worship" element={<Worship />}></Route>
-        <Route path="/Pastoral" element={<Pastoral />}></Route>
-        <Route path="/MediaMinistry" element={<MediaMinistry />}></Route>
+        <Route path="./pages/Worship" element={<Worship />}></Route>
+        <Route path="./pages/Pastoral" element={<Pastoral />}></Route>
+        <Route path="/pages/Media" element={<MediaMinistry />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
