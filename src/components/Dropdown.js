@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 //import components
 import styled from "styled-components";
 import { menuData } from "../data/MenuData";
@@ -13,16 +13,10 @@ const DropdownContainer = styled.div`
   background: #08111c;
   display: grid;
   align-items: center;
-  left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  right: 0;
+  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  bottom: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-  @media screen and (max-width: 1200px) {
-    width: 40%;
-  }
-  @media screen and (max-width: 480px) {
-    width: 100%;
-  }
 `;
 
 const Icon = styled.div`
@@ -48,7 +42,7 @@ const CloseIcon = styled(FaTimes)`
   color: #fff;
 `;
 
-const DropdownLink = styled.a`
+const DropdownLink = styled.div`
   display: flex;
   color: #fff;
   align-items: center;
@@ -98,9 +92,11 @@ const Dropdown = ({ isOpen, toggle }) => {
         <DropdownMenu>
           {menuData.map((item, index) => {
             return (
-              <DropdownLink href={item.link} key={index}>
-                {item.title} <FaGreaterThan style={{ fontSize: "14px" }} />
-              </DropdownLink>
+              <Link to={item.link} style={{ textDecoration: "none" }}>
+                <DropdownLink key={index} onClick={toggle}>
+                  {item.title} <FaGreaterThan style={{ fontSize: "14px" }} />
+                </DropdownLink>
+              </Link>
             );
           })}
         </DropdownMenu>
