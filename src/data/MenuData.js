@@ -1,5 +1,5 @@
 export const menuData = [
-  { title: "About DNCY", link: "/#Home" },
+  { title: "About DNCY", link: "/About" },
   { title: "Recharge", link: "/#Pay_with_Itump" },
   { title: "Upcoming Events", link: "/#Business" },
   { title: "Leadership", link: "/#Develpers" },

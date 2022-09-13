@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Worship from "./pages/Worship";
 import Pastoral from "./pages/Pastoral";
 import MediaMinistry from "./pages/Media";
+import About from "./pages/About";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Index />}></Route>
         <Route path="/Worship" element={<Worship />}></Route>
+        <Route path="/About" element={<About />}></Route>
         <Route path="/Pastoral" element={<Pastoral />}></Route>
         <Route path="/MediaMinistry" element={<MediaMinistry />}></Route>
       </Routes>

@@ -34,7 +34,7 @@ const NavMenu = styled.div`
     display: none;
   }
 `;
-const NavMenuLink = styled.a`
+const NavMenuLink = styled.div`
   cursor: pointer;
   color: #fff;
 display: flex;
@@ -118,9 +118,9 @@ const Navbar = ({ toggle }) => {
       <NavMenu>
         {menuData.map((item, index) => {
           return (
-            <NavMenuLink href={item.link} key={index}>
-              {item.title}
-            </NavMenuLink>
+            <Link to={item.link} style={{ textDecoration: "none" }}>
+              <NavMenuLink key={index}>{item.title}</NavMenuLink>
+            </Link>
           );
         })}
       </NavMenu>

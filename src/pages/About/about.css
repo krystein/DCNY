@@ -1,0 +1,16 @@
+@media screen and (max-width: 1200px) {
+  .img-none {
+    display: none;
+  }
+}
+.about {
+  background-image: url(../../img/PNG/Group38585.png);
+  background-size: cover;
+  background-position: center;
+}
+.about-1 {
+  background-image: url(../../img/PNG/Group38586.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
