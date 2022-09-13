@@ -25,7 +25,7 @@ function App() {
         <Route exact path="/" element={<Index />}></Route>
         <Route path="/Worship" element={<Worship />}></Route>
         <Route path="/Pastoral" element={<Pastoral />}></Route>
-        <Route path="/Media" element={<MediaMinistry />}></Route>
+        <Route path="/MediaMinistry" element={<MediaMinistry />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
