@@ -3,7 +3,14 @@ import Dcny from "./Dcny";
 
 const Index = () => {
   return (
-    <div>
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <Dcny />
     </div>
   );
