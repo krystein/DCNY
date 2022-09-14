@@ -14,7 +14,7 @@ const About2 = () => {
     >
       <div
         className="img-none"
-        style={{ position: "absolute", top: -40, right: 800 }}
+        style={{ position: "absolute", top: -6, right: 800 }}
       >
         <img src={img} alt="" className="img-fluid" width="400" />
       </div>
