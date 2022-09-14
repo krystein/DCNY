@@ -9,11 +9,11 @@ const DropdownContainer = styled.div`
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   background: #08111c;
   display: grid;
   align-items: center;
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  top: ${({ isOpen }) => (isOpen ? "0" : "-110%")};
   bottom: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
@@ -33,7 +33,7 @@ const DropdownWrapper = styled.div``;
 
 const DropdownMenu = styled.div`
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 5px;
   text-align: center;
   margin-bottom: 0.5rem;
 `;
@@ -62,23 +62,32 @@ const DropdownLink = styled.div`
 
 const BtnWarp = styled.div`
   display: grid;
-  grid-gap: 20px;
-  margin-top: 50px;
-  justify-item: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
   button {
-    background-color: #e7c482;
-    border: none;
-    border-radius: 0px 10px 8px 10px;
-    font-size: 1.2rem;
-    font-family: inter, sans-serif;
-    font-weight: 600;
-    height: 50px;
+    background-color: #4c7fb5;
+    border: 2px solid #4c7fb5;
+    border-radius: 8px;
+    height: 40px;
     width: 200px;
     color: #fff;
-  }
-  .btn {
-    display: flex;
-    justify-content: center;
+    font-family: Share Tech;
+    font-size: 18px;
+    font-weight: 400;
+    user-select: none;
+    -webkit-transition: color 0.15s ease-in-out,
+      background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &:hover {
+      background: #4c7fb5;
+      transform: scale(1.05);
+      border: #4c7fb5;
+      color: #fff;
+      font-weight: 800;
+    }
   }
 `;
 
@@ -100,13 +109,17 @@ const Dropdown = ({ isOpen, toggle }) => {
             );
           })}
         </DropdownMenu>
-        <BtnWarp>
-          <div className="btn">
-            <a href="/Openaccount">
-              <button>Sign up</button>
-            </a>
-          </div>
-        </BtnWarp>
+        <Link
+          to="/Dcny"
+          onClick={toggle}
+          style={{ textDecoration: "none", border: "none" }}
+        >
+          <BtnWarp>
+            <div className="btn">
+              <button>Give</button>
+            </div>
+          </BtnWarp>
+        </Link>
       </DropdownWrapper>
     </DropdownContainer>
   );

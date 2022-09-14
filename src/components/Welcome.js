@@ -5,8 +5,8 @@ import { Col, Container, Row } from "react-bootstrap";
 const Welcome = () => {
   return (
     <div>
-      <div style={{ background: "#000", color: "#fff" }} className="p-5">
-        <Container className="p-4">
+      <div style={{ background: "#000", color: "#fff" }}>
+        <Container className="pt-5 pb-5">
           <h1 className="text-center">WELCOME TO CHURCH</h1>
           <p className="text-center">
             Dominion City Church of New York is a non-denominational church
@@ -17,7 +17,10 @@ const Welcome = () => {
           </p>
           <div className="p-5">
             <Row className="mt-4">
-              <Col style={{ backgroundColor: "#131313" }} className="p-5">
+              <div
+                className="col-lg col-sm col-md p-5"
+                style={{ backgroundColor: "#131313" }}
+              >
                 <h6 className="text-uppercase" style={{ color: "#7D828B" }}>
                   pastor god’s gift achiuwa
                 </h6>
@@ -46,12 +49,15 @@ const Welcome = () => {
                 >
                   View His Achivements
                 </button>
-              </Col>
+              </div>
               <Col></Col>
             </Row>
             <Row className="mt-4">
               <Col></Col>
-              <Col style={{ backgroundColor: "#131313" }} className="p-5">
+              <div
+                style={{ backgroundColor: "#131313" }}
+                className="col-lg col-sm col-md p-5"
+              >
                 <h6 className="text-uppercase" style={{ color: "#7D828B" }}>
                   pastor akeil cange
                 </h6>
@@ -80,7 +86,7 @@ const Welcome = () => {
                 >
                   View His Achivements
                 </button>
-              </Col>
+              </div>
             </Row>
           </div>
         </Container>

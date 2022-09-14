@@ -9,7 +9,9 @@ import { FaBars } from "react-icons/fa";
 import "./navbar.css";
 import Img from "../../img/PNG/logo.png";
 
-const Logo = styled.div``;
+const Logo = styled.div`
+  padding-left: 20px;
+`;
 
 const MenuBar = styled(FaBars)`
   display: none;
@@ -124,9 +126,11 @@ const Navbar = ({ toggle }) => {
           );
         })}
       </NavMenu>
-      <NavBtn className="btn">
-        <button>Give</button>
-      </NavBtn>
+      <Link to="/Dcny" style={{ textDecoration: "none", border: "none" }}>
+        <NavBtn className="btn">
+          <button>Give</button>
+        </NavBtn>
+      </Link>
     </nav>
   );
 };

@@ -9,6 +9,7 @@ import Worship from "./pages/Worship";
 import Pastoral from "./pages/Pastoral";
 import MediaMinistry from "./pages/Media";
 import About from "./pages/About";
+import Dcny from "./pages/Dcny";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         <Route path="/About" element={<About />}></Route>
         <Route path="/Pastoral" element={<Pastoral />}></Route>
         <Route path="/MediaMinistry" element={<MediaMinistry />}></Route>
+        <Route path="/Dcny" element={<Dcny />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
